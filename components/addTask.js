@@ -53,16 +53,11 @@ export const addTask = (evento) => {
         check.classList.toggle('far');
     };  
     const titleTask = document.createElement('span');
-            titleTask.classList.add('task');
-            titleTask.innerText = value;
-            taskContent.appendChild(check);
-            taskContent.appendChild(titleTask);
-    // task.innerHTML = cont    ent;
-    const dateElement = document.createElement('span');
-        dateElement.innerHTML = dateFormat;
-
+        titleTask.classList.add('task');
+        titleTask.innerText = value;
+        taskContent.appendChild(check);
+        taskContent.appendChild(titleTask);
         task.appendChild(taskContent);
-        task.append(dateElement);
         task.appendChild(deleteIcon(id));
         return task; 
   };
